@@ -4,17 +4,15 @@ public class DeleteEventBatchTest {
     @testSetup
     public static void testSetupData(){
         Event_Organizer__c  org = new Event_Organizer__c (
-            Name = 'Amit Singh',
-            Phone__c = '9807654321',
-            Email__c = 'sfdcpanther@gmail.com.dev1',
-            Alternative_Phone__c  = '9807654321',
-            Alternative_Email__c ='sfdcpanther@gmail.com.dev1'
+           Name = 'Neeharika Saha',
+            Phone__c = '9932144979',
+            Email__c = 'neeharika.saha.21@aot.edu.in'
         );
         insert org;
         List<Event__c> eventList = new List<Event__c>();
         for(Integer i=0; i<=200; i++){
             Event__c event = new Event__c(
-                Name__c = 'MAX FIT Campaign #'+i+1,
+                Name__c = 'FIT SYNC Campaign #'+i+1,
                 Event_Organizer__c  = org.Id,
                 Event_Type__c = 'Virtual',
                 Frequency__c  = 'Weekly',
