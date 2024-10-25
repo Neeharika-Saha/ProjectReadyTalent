@@ -20,7 +20,7 @@ public class EventAttendeeTriggerTest {
             Recurring__c = true,
             Live__c = true,
             Start_DateTime__c = System.now()
-            //End_Date_Time__c  = System.now().addDays(3)
+            End_Date_Time__c  = System.now().addDays(3)
         );
         insert event;
         Attendee__c att = new Attendee__c(
